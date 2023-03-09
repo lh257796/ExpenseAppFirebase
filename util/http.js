@@ -14,8 +14,8 @@ export async function storeExpense(expenseData, token) {
   return id;
 }
 
-export async function fetchExpenses() {
-  const response = await axios.get(BACKEND_URL + "/expenses.json");
+export async function fetchExpenses(token) {
+  const response = await axios.get(`${BACKEND_URL}/expenses.json?auth=${token}`);
   //response in form of key:value pairs
   const expenses = [];
 
