@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "expenseapp",
+    "name": "Expense App",
     "slug": "expenseapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -28,6 +28,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
   }
 }
